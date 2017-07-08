@@ -40,3 +40,6 @@
 (defn get-pizzas [crust-type]
   (map parse-pizza
        (select-pizzas (pizza-selector crust-type))))
+
+(defn filter-ingredients [re ps]
+  (filter #(some (fn [s] (re-find re s)) (:ingredients %)) ps))
