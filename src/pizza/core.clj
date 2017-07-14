@@ -21,7 +21,7 @@
 (defn pizza-selector [menu]
   (let [menus {:classic 1
                :italy   2
-               :italien 2
+               :italian 2
                :fitness 3}]
     (str/join " " ["#body_bg"
                    "#content_container"
