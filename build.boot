@@ -1,7 +1,3 @@
 (set-env!
- :resource-paths #{"src"}
+ :resource-paths #{"src/clj"}
  :dependencies '[[org.jsoup/jsoup "1.10.3"]])
-
-(task-options!
- repl {:server  true
-       :init-ns 'pizza.core})
